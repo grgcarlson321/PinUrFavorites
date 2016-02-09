@@ -9,7 +9,22 @@ option to visit the post or delete the post from their Pinned Favorites.
 Version: 1.0
 Author: gregcarlson
 */
+//create wp_favorites table in database
+function create_wp_favorites_db_table(){
+    global $wpdb;
+    $table_name = $wpdb->prefix . 'favorites';
+    $sql = "CREATE TABLE IF NOT EXISTS `wp_favorites` (
+  `favorite_id` int(11) NOT NULL,
+  `post_id` double NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `entry_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+);";
 
+    require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
+    dbDelta($sql);
+}
+
+register_activation_hook(__FILE__, 'create_wp_favorites_db_table');
 //enqueue scripts and css
 function tcfavorites_scripts_with_jquery(){
     // Register the script like this for a plugin:
