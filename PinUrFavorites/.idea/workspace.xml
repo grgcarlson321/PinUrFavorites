@@ -25,12 +25,12 @@
       <file leaf-file-name="pin-ur-favorites.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pin-ur-favorites.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.53651685">
-              <caret line="129" column="42" selection-start-line="129" selection-start-column="42" selection-end-line="129" selection-end-column="42" />
+            <state vertical-scroll-proportion="0.1474719">
+              <caret line="7" column="72" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
               <folding>
-                <element signature="e#7#269#0#PHP" expanded="true" />
-                <marker date="1455053885000" expanded="true" signature="1217:1262" placeholder="DELETE FROM " />
-                <marker date="1455053885000" expanded="true" signature="1728:1793" placeholder="INSERT INTO wp_favorites... " />
+                <marker date="1455053220000" expanded="true" signature="1351:1396" placeholder="DELETE FROM " />
+                <marker date="1455053220000" expanded="true" signature="1862:1927" placeholder="INSERT INTO wp_favorites... " />
+                <marker date="1455053220000" expanded="true" signature="5512:5852" placeholder="SELECT favor... wp_favorites" />
               </folding>
             </state>
           </provider>
@@ -39,10 +39,11 @@
       <file leaf-file-name="pinned_favorites_temp.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/pinned_favorites_temp.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="43" />
+            <state vertical-scroll-proportion="-8.75">
+              <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
               <folding>
-                <element signature="e#431#2391#0#PHP" expanded="true" />
+                <element signature="e#6#324#0#PHP" expanded="true" />
+                <marker date="1455053630000" expanded="true" signature="2003:2025" placeholder="Delete from " />
               </folding>
             </state>
           </provider>
@@ -52,9 +53,9 @@
         <entry file="file://$PROJECT_DIR$/js/jquery.pinurfavs.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+              <caret line="7" column="111" selection-start-line="7" selection-start-column="111" selection-end-line="7" selection-end-column="111" />
               <folding>
-                <marker date="1455038445000" expanded="true" signature="1804:1837" placeholder="..." />
+                <marker date="1455053220000" expanded="true" signature="1743:1776" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -73,10 +74,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/templates/pinned_favorites_temp copy.php" />
+        <option value="$PROJECT_DIR$/Pin-ur-favorites.php" />
         <option value="$PROJECT_DIR$/js/jquery.pinurfavs.js" />
         <option value="$PROJECT_DIR$/templates/pinned_favorites_temp.php" />
-        <option value="$PROJECT_DIR$/Pin-ur-favorites.php" />
-        <option value="$PROJECT_DIR$/pin-ur-favorites.php" />
       </list>
     </option>
   </component>
@@ -87,8 +88,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="43" />
-    <option name="y" value="643" />
+    <option name="x" value="26" />
+    <option name="y" value="559" />
     <option name="width" value="1400" />
     <option name="height" value="833" />
   </component>
@@ -117,6 +118,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -165,13 +168,14 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
@@ -214,7 +218,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="43" y="643" width="1400" height="833" extended-state="0" />
+    <frame x="26" y="559" width="1400" height="833" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -231,7 +235,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -240,31 +244,34 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="WordPressConfiguration" enabled="true">
-    <wordpressPath>/Applications/XAMPP/htdocs/web_gallery</wordpressPath>
+    <wordpressPath>$PROJECT_DIR$/../../..</wordpressPath>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pin-ur-favorites.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="72" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
+          <folding>
+            <marker date="1455053220000" expanded="true" signature="1351:1396" placeholder="DELETE FROM " />
+            <marker date="1455053220000" expanded="true" signature="1862:1927" placeholder="INSERT INTO wp_favorites... " />
+            <marker date="1455053220000" expanded="true" signature="5512:5852" placeholder="SELECT favor... wp_favorites" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pinned_favorites_temp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#7#269#0#PHP" expanded="true" />
-            <marker date="1455053885000" expanded="true" signature="1217:1262" placeholder="DELETE FROM " />
-            <marker date="1455053885000" expanded="true" signature="1728:1793" placeholder="INSERT INTO wp_favorites... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/pinned_favorites_temp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="43" />
-          <folding>
-            <element signature="e#431#2391#0#PHP" expanded="true" />
+            <element signature="e#6#324#0#PHP" expanded="true" />
+            <marker date="1455053630000" expanded="true" signature="2003:2025" placeholder="Delete from " />
           </folding>
         </state>
       </provider>
@@ -272,41 +279,75 @@
     <entry file="file://$PROJECT_DIR$/js/jquery.pinurfavs.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+          <caret line="7" column="111" selection-start-line="7" selection-start-column="111" selection-end-line="7" selection-end-column="111" />
           <folding>
-            <marker date="1455038445000" expanded="true" signature="1804:1837" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/jquery.pinurfavs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
-          <folding>
-            <marker date="1455038445000" expanded="true" signature="1804:1837" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/pinned_favorites_temp.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="43" />
-          <folding>
-            <element signature="e#431#2391#0#PHP" expanded="true" />
+            <marker date="1455053220000" expanded="true" signature="1743:1776" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pin-ur-favorites.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.53651685">
-          <caret line="129" column="42" selection-start-line="129" selection-start-column="42" selection-end-line="129" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#7#269#0#PHP" expanded="true" />
-            <marker date="1455053885000" expanded="true" signature="1217:1262" placeholder="DELETE FROM " />
-            <marker date="1455053885000" expanded="true" signature="1728:1793" placeholder="INSERT INTO wp_favorites... " />
+            <marker date="1455053220000" expanded="true" signature="1351:1396" placeholder="DELETE FROM " />
+            <marker date="1455053220000" expanded="true" signature="1862:1927" placeholder="INSERT INTO wp_favorites... " />
+            <marker date="1455053220000" expanded="true" signature="5512:5852" placeholder="SELECT favor... wp_favorites" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pinned_favorites_temp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="26" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
+          <folding>
+            <element signature="e#6#324#0#PHP" expanded="true" />
+            <marker date="1455053630000" expanded="true" signature="2003:2025" placeholder="Delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.pinurfavs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+          <folding>
+            <marker date="1455053220000" expanded="true" signature="1743:1776" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery.pinurfavs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="111" selection-start-line="7" selection-start-column="111" selection-end-line="7" selection-end-column="111" />
+          <folding>
+            <marker date="1455053220000" expanded="true" signature="1743:1776" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/pinned_favorites_temp.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.75">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding>
+            <element signature="e#6#324#0#PHP" expanded="true" />
+            <marker date="1455053630000" expanded="true" signature="2003:2025" placeholder="Delete from " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pin-ur-favorites.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1474719">
+          <caret line="7" column="72" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
+          <folding>
+            <marker date="1455053220000" expanded="true" signature="1351:1396" placeholder="DELETE FROM " />
+            <marker date="1455053220000" expanded="true" signature="1862:1927" placeholder="INSERT INTO wp_favorites... " />
+            <marker date="1455053220000" expanded="true" signature="5512:5852" placeholder="SELECT favor... wp_favorites" />
           </folding>
         </state>
       </provider>
