@@ -7,7 +7,7 @@ option to visit the post or delete the post from their Pinned Favorites.
 
 <h2>How to Install</h2>
 
-<b>1.</b>Install PinUrFavorites by downloading the plugin directory from the Github repository and then placing it in 
+<b>1.</b> Install PinUrFavorites by downloading the plugin directory from the Github repository and then placing it in 
 yourWordPressSite/wp-content/plugins. <br>
 
 <b>2.</b> Activate the PinUrFavorites plugin from the Plugins page on the WordPress Dashboard left side menu.<br>
