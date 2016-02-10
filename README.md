@@ -18,11 +18,11 @@ option to visit the post or delete the post from their Pinned Favorites.
 <p>Note about html link: The link attributes for id, class, and name must stay consistent in order for PinUrFavorites to work correctly. 
 </p> 
 
-<b>4.</b>Copy and paste the HTML link above into your single.php file. The file is located in yourwordpresssite/wp-content/themes/yourtheme/single.php <br>
+<b>4.</b> Copy and paste the HTML link above into your single.php file. The file is located in yourwordpresssite/wp-content/themes/yourtheme/single.php <br>
 
-<b>5. </b>View a post on your website and see if the link appears. If it doesn't you may have to do some further investigating in your theme directory and find the file responsible for displaying post content. <br>
+<b>5.</b> View a post on your website and see if the link appears. If it doesn't you may have to do some further investigating in your theme directory and find the file responsible for displaying post content. <br>
 
-<b>6. </b> Next add a new page to your website and select the PinUrFavorites template called: pinned favorites temp. This template displays the users posts that they have Pinned in their Favorites. Provide a link somewhere on your website where users can view and click on it to visit their My Pinned Favorites page. On this page users can manage their pinned favorites and re-visit their favorite posts on your website. 
+<b>6.</b> Next add a new page to your website and select the PinUrFavorites template called: pinned favorites temp. This template displays the users posts that they have Pinned in their Favorites. Provide a link somewhere on your website where users can view and click on it to visit their My Pinned Favorites page. On this page users can manage their pinned favorites and re-visit their favorite posts on your website. 
 
 <h3>Admin Features</h3>
 <p>When the PinUrFavorites plugin is activated a menu item is added to the WordPress Dashboard. The menu item is a link for the Pinned Favorites on your website. Admin user can view the Pinned Favorites page to see what posts users have pinned on his or her website. </p> 
