@@ -7,15 +7,19 @@ option to visit the post or delete the post from their Pinned Favorites.
 
 <h2>How to Install</h2>
 
-<b>1.</b> Install PinUrFavorites by downloading the plugin directory from the Github repository and then placing it in yourWordPressSite/wp-content/plugins.</br>
-<b>2.</b> Activate the PinUrFavorites plugin from the Plugins page on the WordPress Dashboard left side menu.</br>
+<b>1.</b>Install PinUrFavorites by downloading the plugin directory from the Github repository and then placing it in 
+yourWordPressSite/wp-content/plugins. <br>
+
+<b>2.</b> Activate the PinUrFavorites plugin from the Plugins page on the WordPress Dashboard left side menu.<br>
+
 <b>3.</b> In order to start letting users pin their favorite posts you need provide a link on your website that is similiar to the following: <br>
-&lt;a id="4" class="addfavorite" name="fromPost" href="#"&gt;<br />
-&lt;img width="15" height="15" title="Pin to favorites!" src="http://localhost/web_gallery/wp-content/plugins/PinUrFavorites/images//favorite_pin.png"&gt;<br />
-&lt;span style="color:#2295de; font-weight: bold;"&gt; Pin as favorite&lt;/span&gt;<br />
+
+&lt;a id="4" class="addfavorite" name="fromPost" href="#"&gt;
+&lt;img width="15" height="15" title="Pin to favorites!" src="http://localhost/web_gallery/wp-content/plugins/PinUrFavorites/images//favorite_pin.png"&gt;
+&lt;span style="color:#2295de; font-weight: bold;"&gt; Pin as favorite&lt;/span&gt;
 &lt;/a&gt;
 
-<p>Note about html link: The link attributes for id, class, and name must stay consistent in order for PinUrFavorites to work correctly. 
+<p>Note about HTML link: The link attributes for id, class, and name must stay consistent in order for PinUrFavorites to work correctly. 
 </p> 
 
 <b>4.</b> Copy and paste the HTML link above into your single.php file. The file is located in yourwordpresssite/wp-content/themes/yourtheme/single.php <br>
