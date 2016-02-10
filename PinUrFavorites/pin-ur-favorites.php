@@ -9,7 +9,9 @@ option to visit the post or delete the post from their Pinned Favorites.
 Version: 1.0
 Author: gregcarlson
 */
-//create wp_favorites table in database
+//define the location of the plugin directory
+define( 'PinUrFavorites', dirname(__FILE__).'/' );
+include 'add_pin_fav_menu.php';
 
 //enqueue scripts and css
 function tcfavorites_scripts_with_jquery(){
@@ -68,7 +70,6 @@ add_action( 'wp_ajax_nopriv_tc_ajax_favorite', 'tcfav_add_favorite' );
 if(!class_exists('pin_ur_favs')){
     class pin_ur_favs{
 
-
         //Unique identifier
         protected $plugin_slug;
         //reference to an instance of this class
@@ -88,7 +89,8 @@ if(!class_exists('pin_ur_favs')){
         private function __construct()
         {
             $this->templates = array();
-
+            //add menu to admin dash
+            add_action('admin_menu', array($this, 'pin_favorites_menu'));
             //Add a filter to the attributes betabox to inject template into the cache
             add_filter('page_attributes_dropdown_pages_args', array($this, 'register_project_templates'));
             //Add a filter to the save post to inject out template into page cache
@@ -99,7 +101,11 @@ if(!class_exists('pin_ur_favs')){
             $this->templates = array('templates/pinned_favorites_temp.php'=>"pinned favorites temp" );
         }
 
-
+        //menu for admin dashboard to view users pinned favorites
+        public function pin_favorites_menu(){
+            add_menu_page('Pinned Favorites', 'Pinned Favorites', 'manage_options', 'pin-submenu', '', '', 16);
+            add_submenu_page('pin-submenu', 'Pinned Items', 'Pinned Items', 'manage_options', 'pin-submenu', 'add_pin_fav_menu');
+        }
 
         public function register_project_templates($atts){
             //create teh key used for the themes cache
@@ -166,6 +172,7 @@ if(!class_exists('pin_ur_favs')){
 }
 add_action('plugins_loaded', array('pin_ur_favs', 'get_instance'));
 
+//create wp_favorites table in database
 function create_wp_favorites_tb() {
     global $wpdb;
     $charset_collate = $wpdb->get_charset_collate();
@@ -184,8 +191,6 @@ function create_wp_favorites_tb() {
         //reference to upgrade.php file
         require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
         dbDelta( $sql );
-
-        //update_option('keyword_ranker_version',$keyword_rankerdb);
     }
 //action hook for plugin activation
 
@@ -193,7 +198,4 @@ function create_wp_favorites_tb() {
 
 //end of plugin installation
 register_activation_hook( __FILE__, 'create_wp_favorites_tb' );
-
-
-
 ?>
