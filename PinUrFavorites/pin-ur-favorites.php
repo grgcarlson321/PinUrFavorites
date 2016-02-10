@@ -10,21 +10,7 @@ Version: 1.0
 Author: gregcarlson
 */
 //create wp_favorites table in database
-function create_wp_favorites_db_table(){
-    global $wpdb;
-    $table_name = $wpdb->prefix . 'favorites';
-    $sql = "CREATE TABLE IF NOT EXISTS `wp_favorites` (
-  `favorite_id` int(11) NOT NULL,
-  `post_id` double NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `entry_date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-);";
 
-    require_once(ABSPATH . 'wp-admin/includes/upgrade.php');
-    dbDelta($sql);
-}
-
-register_activation_hook(__FILE__, 'create_wp_favorites_db_table');
 //enqueue scripts and css
 function tcfavorites_scripts_with_jquery(){
     // Register the script like this for a plugin:
@@ -82,6 +68,7 @@ add_action( 'wp_ajax_nopriv_tc_ajax_favorite', 'tcfav_add_favorite' );
 if(!class_exists('pin_ur_favs')){
     class pin_ur_favs{
 
+
         //Unique identifier
         protected $plugin_slug;
         //reference to an instance of this class
@@ -95,6 +82,8 @@ if(!class_exists('pin_ur_favs')){
             }
             return self::$instance;
         }
+
+
         //Initializes the plugin by setting filters and administration
         private function __construct()
         {
@@ -109,6 +98,8 @@ if(!class_exists('pin_ur_favs')){
             //Add your templates to this array
             $this->templates = array('templates/pinned_favorites_temp.php'=>"pinned favorites temp" );
         }
+
+
 
         public function register_project_templates($atts){
             //create teh key used for the themes cache
@@ -172,9 +163,36 @@ if(!class_exists('pin_ur_favs')){
         }
 
     }
-
 }
 add_action('plugins_loaded', array('pin_ur_favs', 'get_instance'));
+
+function create_wp_favorites_tb() {
+    global $wpdb;
+    $charset_collate = $wpdb->get_charset_collate();
+    $table_name       = $wpdb->prefix . "favorites";
+
+    if ( $wpdb->get_var( "SHOW TABLES LIKE $table_name" ) != $table_name ) {
+
+        $sql = "CREATE TABLE IF NOT EXISTS $table_name  (
+    favorite_id int(11) NOT NULL AUTO_INCREMENT,
+    post_id double NOT NULL,
+    user_id int(11) NOT NULL,
+    entry_date timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    PRIMARY KEY (favorite_id)
+    ) $charset_collate;";
+
+        //reference to upgrade.php file
+        require_once( ABSPATH . 'wp-admin/includes/upgrade.php' );
+        dbDelta( $sql );
+
+        //update_option('keyword_ranker_version',$keyword_rankerdb);
+    }
+//action hook for plugin activation
+
+}
+
+//end of plugin installation
+register_activation_hook( __FILE__, 'create_wp_favorites_tb' );
 
 
 
