@@ -11,7 +11,6 @@ Author: gregcarlson
 */
 //define the location of the plugin directory
 define( 'PinUrFavorites', dirname(__FILE__).'/' );
-include 'add_pin_fav_menu.php';
 
 //enqueue scripts and css
 function tcfavorites_scripts_with_jquery(){

@@ -108,7 +108,6 @@ class pin_favorites_list extends WP_List_Table
     {
 
         global $wpdb;
-        // $filterState = $_GET['filterState'];
 
         $user_pinned_items = $wpdb->get_results($wpdb->prepare("SELECT user_nicename, entry_date, user_email, post_title, guid
                                                                 FROM wp_users u, wp_posts p, wp_favorites f

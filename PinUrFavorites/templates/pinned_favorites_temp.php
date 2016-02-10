@@ -29,14 +29,9 @@ Template Name: pinned favorites temp
 
 				//Build a table if there are any saved TC items or display no items
 				if(sizeof($tc_items) > 0){
-
-					echo "Ready to make a table<br>";
 					?>
 					<table class ="basic_table"><tr><th width = '50%'>Link</th><th width ='10%'>Date</th><th width '10%'>Delete</th></tr>
 						<?php
-
-
-
 						// List favorite saved TC item link and display
 						foreach ($tc_items as $unit){
 
